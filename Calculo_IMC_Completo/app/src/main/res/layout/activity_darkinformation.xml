@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#4D555555"
+        android:fontFamily="arial"
+        android:text="Dados Pessoais"
+        android:textAlignment="center"
+        android:textColor="#50C878"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/InformationeditTextNome"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="#4D555555"
+        android:ems="10"
+        android:fontFamily="arial"
+        android:hint="Escreva Seu Nome"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#50C878"
+        android:textColorHint="#2C8549"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/InformationeditTextPeso"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="#4D555555"
+        android:digits="0123456789"
+        android:ems="10"
+        android:fontFamily="arial"
+        android:hint="Digite Seu Peso (Kg)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#50C878"
+        android:textColorHint="#2C8549"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/InformationeditTextNome"
+        app:layout_constraintStart_toStartOf="@+id/InformationeditTextNome"
+        app:layout_constraintTop_toBottomOf="@+id/InformationeditTextNome" />
+
+    <EditText
+        android:id="@+id/InformationeditTextAltura"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="#4D555555"
+        android:digits="0123456789."
+        android:ems="10"
+        android:fontFamily="arial"
+        android:hint="Digite Sua Altura (Metros)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#50C878"
+        android:textColorHint="#2C8549"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/InformationeditTextPeso"
+        app:layout_constraintStart_toStartOf="@+id/InformationeditTextPeso"
+        app:layout_constraintTop_toBottomOf="@+id/InformationeditTextPeso" />
+
+    <TextView
+        android:id="@+id/InformationtextViewSexo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#4D555555"
+        android:fontFamily="arial"
+        android:text="Sexo"
+        android:textAlignment="center"
+        android:textColor="#50C878"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/InformationeditTextAltura"
+        app:layout_constraintStart_toStartOf="@+id/InformationeditTextAltura"
+        app:layout_constraintTop_toBottomOf="@+id/InformationeditTextAltura" />
+
+    <ImageButton
+        android:id="@+id/InformationbtMasculino"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#4D555555"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="@+id/InformationtextViewSexo"
+        app:layout_constraintTop_toBottomOf="@+id/InformationtextViewSexo"
+        app:srcCompat="@drawable/masculino" />
+
+    <ImageButton
+        android:id="@+id/InformationbtFeminino"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4D555555"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@+id/InformationtextViewSexo"
+        app:layout_constraintTop_toTopOf="@+id/InformationbtMasculino"
+        app:srcCompat="@drawable/feminino" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
